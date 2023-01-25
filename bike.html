@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+    <div class="thumbnail">
+      <li><img src="bike1.png" onclick="big('bike1.png');path('#e5e5e5');bg('skyblue')"></li>
+      <li><img src="bike2.png" onclick="big('bike2.png');path('white');bg('linear-gradient(70deg,yellow,green')"></li>
+      <li><img src="bike3.png" onclick="big('bike3.png');path('#e5e5e5');bg('rgba(255,0,0,0.8')"></li>
+    </div>
+    <div class="big-img">
+        <img src="bike3.png" class="big">
+    </div>
+    <div class="content">
+        <p>&#X1F525;let's ride &#X1F525;</p><br>
+        <h1>Don't Fear Dying <br> &nbsp;Fear Not Living</h1><br><br>
+        <h5>&#X1F60E;For Bike Lovers & Bike Raiders&#X1F49D;</h5>
+    </div>
+    </div>
+</body>
+<script>
+    function big(img){
+        document.querySelector('.big').src=img;
+    }
+    function path(color){
+        const path=document.querySelector('.path');
+        path.style.background=color;
+    }
+    function bg(background){
+        const bg=document.querySelector('.container');
+        bg.style.background=background;
+    }
+</script>
+</html>
